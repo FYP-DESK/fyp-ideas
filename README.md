@@ -14,10 +14,14 @@ One directory per person, named after them:
 
 ```
 ideas/
+├── abdullah/       # ideas added by abdullah
+│   └── .gitkeep
 ├── akash/          # ideas added by akash
 │   ├── A8.md
 │   └── A22.md
-└── behzad/         # ideas added by behzad
+├── behzad/         # ideas added by behzad
+│   └── .gitkeep
+└── umair/          # ideas added by umair
     └── .gitkeep
 ```
 
@@ -40,11 +44,14 @@ This keeps authorship obvious and makes it impossible to accidentally clobber so
 
 ## Joining the repo
 
-You need write access or a fork.
+A directory may already exist for you — check the tree above first. If it is there, skip
+straight to [Adding an idea](#adding-an-idea).
+
+If it is not there yet, you need write access or a fork.
 
 1. Fork this repo to your own GitHub account.
 2. Create your directory: `ideas/<your-name>/` — your name, all lowercase.
-3. Your directory may start empty. Git does not track empty folders, so add a `.gitkeep`
+3. Your directory will start empty. Git does not track empty folders, so add a `.gitkeep`
    file inside it. (The file has no content — it just makes the folder exist.)
 4. Add at least one real idea file so the folder is not just a placeholder.
 5. Open a pull request. A repo maintainer reviews and merges.
