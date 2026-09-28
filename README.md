@@ -21,9 +21,14 @@ ideas/
 │   └── A22.md
 ├── behzad/         # ideas added by behzad
 │   └── .gitkeep
-└── umair/          # ideas added by umair
-    └── .gitkeep
+├── umair/          # ideas added by umair
+│   └── .gitkeep
+└── TEMPLATE.md     # standard idea template (copy this, never edit in place)
 ```
+
+At the repo root, `IDEAS_INDEX.json` is the machine-readable registry: one row per
+idea with a stable `IDEA-NNN` id, owner, path, status. The fyp-service flow and the
+contribution tracker reference ideas by these ids, so every idea file gets a row.
 
 ---
 
@@ -100,3 +105,25 @@ agent: opencode
 
 This is entirely optional. Add it when it is useful, skip it when it is not. See
 `ideas/akash/A8.md` and `ideas/akash/A22.md` for the format in practice.
+
+---
+
+## Idea registry (IDEAS_INDEX.json)
+
+Every idea gets a row in the root `IDEAS_INDEX.json` — one row per idea, in the
+SAME PR as the idea file:
+
+- `id` — `IDEA-NNN`, zero-padded, never reused. Take the next free number.
+- `title` — short human-readable name of the idea.
+- `owner` — your lower-case name; must match `ideas/<owner>/`.
+- `path` — exact path of the idea file inside this repo.
+- `status` — `proposed` until the team selects it for a deal; then `selected`.
+- `source` / `date` — where and when the idea came from (same values as frontmatter).
+
+One rule, same as the repo itself: you append only your own rows. Never edit,
+rename, or delete another person's row. The `selected` status is set by the team
+lead when a deal is signed on that idea.
+
+Copy `ideas/TEMPLATE.md` for every new idea — it keeps the sections consistent
+(problem, who has it, what we build, how hard, success check) so proposals can be
+drafted from any idea without chasing the author.

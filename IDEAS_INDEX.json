@@ -1,0 +1,24 @@
+{
+  "note": "Hand-edited registry. Add one row here in the SAME PR as your idea file. Never edit another person's row. id format: IDEA-NNN (zero-padded, never reused).",
+  "generatedAt": "2026-09-28",
+  "ideas": [
+    {
+      "id": "IDEA-001",
+      "title": "50 FYP / Startup Ideas for Pakistan (Fintech, AI Automation, Education, Real Estate, AI Systems)",
+      "owner": "akash",
+      "path": "ideas/akash/A8.md",
+      "status": "proposed",
+      "source": "Q8.txt",
+      "date": "2026-09-26"
+    },
+    {
+      "id": "IDEA-002",
+      "title": "30 FYP-Ready Projects: Small to Big, with Recommendation",
+      "owner": "akash",
+      "path": "ideas/akash/A22.md",
+      "status": "proposed",
+      "source": "Q22.txt",
+      "date": "2026-09-18"
+    }
+  ]
+}
